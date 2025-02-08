@@ -1,0 +1,35 @@
+.accordion {
+    width: 400px;
+    margin: 20px auto;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    text-align: left;
+    background: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .accordion-header:hover {
+    background: #666;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,16 @@
+/* src/components/Calendar.css */
+.calendar-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .date-picker {
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 18px;
+    color: green;
+  }
+  

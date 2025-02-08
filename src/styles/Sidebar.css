@@ -1,0 +1,33 @@
+/* src/index.css */
+.app-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s;
+  }
+  
+  .sidebar li:hover {
+    background: #555;
+  }
+  
+  .content {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
