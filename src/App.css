@@ -1,22 +1,18 @@
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  background: #1a1a1a;
+/* Light Mode */
+.app-container.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+.app-container.dark {
+  background-color: black;
   color: white;
 }
 
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-}
-
-.component-section h2 {
-  margin-top: 20px;
-  color: #f39c12;
-}
-
-.component-section {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
+/* Position the Switch */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }

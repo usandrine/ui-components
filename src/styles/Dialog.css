@@ -1,36 +1,54 @@
-/* src/components/Dialog.css */
+/* Overlay to cover the entire screen */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal {
-    background: gray;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 400px;
-    text-align: center;
-  }
-  
-  .close-btn {
-    margin-top: 10px;
-    padding: 8px 16px;
-    background: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .close-btn:hover {
-    background: darkred;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  z-index: 999; /* Ensure modal is on top */
+}
+
+/* Modal box styling */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: space-between; /* Ensures the button is at the bottom */
+  position: relative;
+  max-height: 80%; /* Max height for the modal */
+  overflow-y: auto; /* Add scrolling if content exceeds */
+}
+
+/* Content inside the modal */
+.modal-content {
+  flex-grow: 1; /* Allow content to grow and take available space */
+  margin-bottom: 20px; /* Space between content and button */
+}
+
+/* Close button styling */
+.close-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 80px; /* Fixed button width */
+  align-self: auto; /* Center the button horizontally */
+  margin-top: auto; /* Push the button to the bottom of the modal */
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background-color: darkred;
+}

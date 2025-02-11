@@ -1,4 +1,3 @@
-// src/components/Dialog.jsx
 import React from "react";
 import "../styles/Dialog.css";
 

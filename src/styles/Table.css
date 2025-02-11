@@ -1,0 +1,93 @@
+/* Table container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  /* Table header */
+  th {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Table rows */
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Hover effect for rows */
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Filter input field */
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 16px;
+  }
+  
+  /* Pagination controls */
+  div {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Pagination button active state */
+  button:focus {
+    outline: none;
+  }
+  /* Light Mode */
+.app-container.light {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark Mode */
+  .app-container.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Switch Button */
+  .theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .switch-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .switch-btn:hover {
+    background: #555;
+  }
+  

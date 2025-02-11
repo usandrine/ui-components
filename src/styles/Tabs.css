@@ -1,0 +1,33 @@
+.tabs-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .tabs button {
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  
+  .tabs button.active {
+    border-bottom: 3px solid blue;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  

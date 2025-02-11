@@ -1,0 +1,99 @@
+/* Sheet container styling */
+.sheet-container {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden off-screen */
+    height: 100%;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 999;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sheet-container.open {
+    right: 0; /* Slide-in effect */
+  }
+  
+  /* Sheet content */
+  .sheet-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sheet-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sheet-content input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .sheet-content button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .sheet-content button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Close button */
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+  }
+  
+  .close-btn:hover {
+    color: #ff0000;
+  }
+/* Light Mode */
+.app-container.light {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark Mode */
+  .app-container.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Switch Button */
+  .theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .switch-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .switch-btn:hover {
+    background: #555;
+  }
+    
